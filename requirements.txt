@@ -1,0 +1,1 @@
+streamlitgoogle-genaiPillowLangChain RAG dependencieslangchain==0.2.11langchain-google-genai==1.0.1pypdf==4.2.0faiss-cpu==1.8.0
