@@ -1,7 +1,6 @@
 streamlit
 google-genai
 Pillow
-LangChain RAG dependencies
 langchain==0.2.11
 langchain-google-genai==1.0.1
 pypdf==4.2.0
