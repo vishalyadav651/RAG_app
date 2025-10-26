@@ -1,7 +1,7 @@
 streamlit
 google-genai
 Pillow
-langchain==0.2.11
-langchain-google-genai==1.0.1
+langchain==0.2.23
+langchain-google-genai==1.0.3
 pypdf==4.2.0
-faiss-cpu==1.8.0
+faiss-cpu==1.12.0
