@@ -4,7 +4,8 @@ from io import BytesIO
 from pypdf import PdfReader
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+# from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 
@@ -37,8 +38,8 @@ def get_pdf_text(pdf_docs):
 def get_text_chunks(text):
     """Splits text into manageable chunks for embedding."""
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=2000,
+        chunk_overlap=100,
         length_function=len
     )
     chunks = text_splitter.split_text(text)
@@ -213,3 +214,4 @@ with chat_container:
                 st.markdown(f"**User**: *{text}*")
             else:
                 st.markdown(f"**🤖 Gemini**: {text}")
+
