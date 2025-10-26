@@ -3,6 +3,6 @@ google-genai
 Pillow
 langchain==0.1.20
 langchain-google-genai~=1.0.0
-langchain-community==0.0.35
+langchain-community==0.0.38
 pypdf==4.2.0
 faiss-cpu==1.12.0
